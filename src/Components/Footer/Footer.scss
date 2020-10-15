@@ -1,0 +1,37 @@
+@import "../../App.scss";
+
+footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      .btn {
+        cursor: pointer;
+        border: 2px solid $pink;
+        border-radius: 50px;
+        margin-top: 1.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.65rem;
+        font-weight: bold;
+        letter-spacing: 0.025rem;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+
+        &:hover {
+        }
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.2;
+        font-family: "Rubik", sans-serif;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../App.scss";
+
+$content-width: 1000px;
+$start-tablet: 550px;
+$start-full: 1024px;
+$nav-height: 70px;
+$hero-height: 200px;
+$nav-font-color: #f6f7eb;
+$highlight-font-color: #f6f7eb;
+$link-hover-color: #2d93ad;
+$link-color: #0ef0ef;
+
+nav {
+  min-height: 80px;
+  ul {
+    text-align: right;
+    color: $default-font-color;
+    li {
+      list-style: none;
+      display: inline;
+      text-align: center;
+      padding: 0 1em 0 1em;
+      a {
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          opacity: 50%;
+        }
+      }
+    }
+  }
+}
+
+header {
+  background-image: linear-gradient(
+      135deg,
+      rgba($blue, 0.5) 0%,
+      rgba($pink, 0.4) 100%
+    ),
+    url("../../Media/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  position: relative;
+  z-index: 1;
+
+  canvas {
+    position: absolute;
+  }
+  .content {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 8px $dark-indigo;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%232D2D2D' fill-opacity='1' d='M0,192L0,160L36.9,160L36.9,288L73.8,288L73.8,224L110.8,224L110.8,128L147.7,128L147.7,160L184.6,160L184.6,96L221.5,96L221.5,224L258.5,224L258.5,224L295.4,224L295.4,256L332.3,256L332.3,128L369.2,128L369.2,32L406.2,32L406.2,32L443.1,32L443.1,192L480,192L480,64L516.9,64L516.9,256L553.8,256L553.8,288L590.8,288L590.8,224L627.7,224L627.7,32L664.6,32L664.6,32L701.5,32L701.5,160L738.5,160L738.5,96L775.4,96L775.4,96L812.3,96L812.3,32L849.2,32L849.2,256L886.2,256L886.2,256L923.1,256L923.1,224L960,224L960,32L996.9,32L996.9,192L1033.8,192L1033.8,160L1070.8,160L1070.8,224L1107.7,224L1107.7,192L1144.6,192L1144.6,160L1181.5,160L1181.5,128L1218.5,128L1218.5,64L1255.4,64L1255.4,64L1292.3,64L1292.3,96L1329.2,96L1329.2,64L1366.2,64L1366.2,96L1403.1,96L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}

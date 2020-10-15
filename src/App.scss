@@ -1,0 +1,24 @@
+$default-font-color: #ffffff;
+$grey: #2d2d2d;
+$dark-yellow: #cd9b55;
+$yellow: #f5b90a;
+$light-yellow: #ffdca5;
+$pink: #be2d7d;
+$blue: #285aa5;
+$bluebackground: #101a4c;
+$blueoffeset: #1a1737;
+$dark-indigo: #000037;
+$light-purple: #803391;
+$dark-purple: #53479e;
+body {
+  font-family: "Rubik", sans-serif;
+  color: $default-font-color;
+  line-height: 1.6;
+  margin: 0;
+  background: $bluebackground;
+
+  .app {
+    margin: auto;
+    width: 100%;
+  }
+}

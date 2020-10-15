@@ -1,0 +1,21 @@
+@import "../../App.scss";
+
+.hero {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 8px $dark-indigo;
+
+  .title {
+    // line-height: 15px;
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 12px;
+    position: relative;
+  }
+}
